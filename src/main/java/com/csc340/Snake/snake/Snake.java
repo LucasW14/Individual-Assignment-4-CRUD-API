@@ -35,6 +35,11 @@ public class Snake {
     @Column(nullable = false)
     private String about;
 
+    private String description;
+
+    private double lengthM;
+
+
     private  int age;
 
     public Snake(int snakeId,  String habitat, int age, String description, double lengthM, String about, String title) {
@@ -63,9 +68,7 @@ public class Snake {
         this.age = age;
     }
 
-    private String description;
 
-    private double lengthM;
 /*
     public Snake(int snakeId, String name, String description, double lengthM) {
         this.snakeId = snakeId;

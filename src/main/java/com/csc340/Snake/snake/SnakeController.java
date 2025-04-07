@@ -54,7 +54,7 @@ public class SnakeController {
     }
 
     @GetMapping("/length/{lengthM}")
-    public Object getSnakeByLength(@PathVariable double lengthM ) {
+    public Object getSnakeByLength(@PathVariable double lengthM) {
         return new ResponseEntity<>(service.getSnakesByLength(lengthM), HttpStatus.OK);
 
 
@@ -62,7 +62,7 @@ public class SnakeController {
 
 
     @GetMapping("/long")
-    public Object getHonorsStudents(@RequestParam(name = "length", defaultValue = "3.0") double length) {
+    public Object getSnakesByLengthExact(@RequestParam(name = "length", defaultValue = "3.0") double length) {
         return new ResponseEntity<>(service.getSnakesByLength(length), HttpStatus.OK);
 
     }
@@ -80,8 +80,7 @@ public class SnakeController {
     }
 
     @PutMapping("/update/{snakeId}")
-    public Object updateStudent(@PathVariable int snakeId, @RequestBody Snake snake) {
-        System.out.println(snake.toString());
+    public Object updateSnake(@PathVariable int snakeId, @RequestBody Snake snake) {
         service.updateSnake(snakeId, snake);
         return new ResponseEntity<>(service.getSnakeById(snakeId), HttpStatus.CREATED);
 
