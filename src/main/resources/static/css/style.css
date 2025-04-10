@@ -1,0 +1,108 @@
+<style>
+        .table-container {
+            white-space: nowrap; /* Ensures tables stay on the same line */
+        }
+
+        table {
+            display: inline-block;
+            margin-right: 20px; /* Adds space between tables */
+            border-collapse: collapse;
+            text-align: left;
+            border: 2px solid black;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        /* Add Gradient Background */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #16f5ff, #6fff5f); /* Gradient from top-left to bottom-right */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Style for the menu */
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: none;
+            background: #258a1d;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Style for text */
+        h1 {
+            color: #ffffff;
+            text-align: center;
+        }
+
+        h2 {
+            color: white;  /* White color for contrast */
+            text-align: center;
+            font-size: 1.5em;  /* Make the subheading smaller than the title */
+            margin-top: 10px; /* Space between title and subheading */
+        }
+
+        /* Optional: Styling for the image */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Additional padding for paragraphs */
+        p {
+            text-align: center;
+            padding: 0 20px;
+            font-size: 1.2em;
+        }
+
+        .search-bar {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          max-width: 400px;
+          margin: 20px auto;
+          background-color: #f1f1f1;
+          border-radius: 30px;
+          padding: 5px 15px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-bar input[type="text"] {
+          border: none;
+          background: transparent;
+          outline: none;
+          font-size: 16px;
+          padding: 10px;
+          flex: 1;
+        }
+
+        .search-bar button {
+          border: none;
+          background-color: #799351;
+          color: white;
+          padding: 10px 16px;
+          border-radius: 25px;
+          cursor: pointer;
+          font-weight: bold;
+          transition: background-color 0.3s ease;
+        }
+
+        .search-bar button:hover {
+          background-color: #5e7d3b;
+        }
+
+
+    </style>
