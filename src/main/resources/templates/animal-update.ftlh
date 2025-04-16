@@ -28,17 +28,17 @@
 <h1 style="color: green; text-align: center">Snakester </h1>
 <h2 style="color: White; text-align: center">${title}</h2>
 
-<form id="update-student" action="/snakes/update/${snake.snakeId?c}" method="post">
+<form id="update-snake" action="/snakes/update/${snake.snakeId?c}" method="post">
 
 
   <!-- Full Name -->
-  <label for="snakeId">Snake Title(name): </label>
-  <input type="number" id="snakeId" name="snakeId" placeholder="Enter SnakeId" required value="${snake.title}" readonly>
+  <label for="snakeId">Snake ID: </label>
+  <input type="number" id="snakeId" name="snakeId" placeholder="Enter SnakeId" required value="${snake.snakeId}" readonly>
   <br>
   <br>
   <br>
   <label for="title">Snake Title(name): </label>
-  <input type="text" id="title" name="name" placeholder="Enter Snake Name" required value="${snake.title}">
+  <input type="text" id="title" name="title" placeholder="Enter Snake Name" required value="${snake.title}">
   <br>
   <br>
   <br>
@@ -94,7 +94,7 @@
   <!--  <br>-->
   <!--  <br>-->
   <!-- Submit Button -->
-  <button type="submit" class="btn btn-primary">Create</button>
+  <button type="submit" class="btn btn-primary">update</button>
   <a href="/snakes/${snake.snakeId?c}" class="btn btn-outline-danger">Cancel</a>
 
 </form>

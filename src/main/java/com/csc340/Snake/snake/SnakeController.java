@@ -100,6 +100,15 @@ public class SnakeController {
 
     }
 
+    @PostMapping("/update/{snakeId}")
+    public Object updateSnake(@PathVariable int snakeId, Snake snake) {
+
+        service.updateSnake(snakeId, snake);
+        //return new ResponseEntity<>(service.getStudentById(studentId), HttpStatus.CREATED);
+        return "redirect:/snakes/" + snakeId;
+
+    }
+
     @GetMapping("/delete/{snakeId}")
     public Object deleteSnakeById(@PathVariable int snakeId) {
         service.deleteSnakesById(snakeId);

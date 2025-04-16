@@ -68,41 +68,5 @@
             font-size: 1.2em;
         }
 
-        .search-bar {
-          display: flex;
-          align-items: center;
-          width: 100%;
-          max-width: 400px;
-          margin: 20px auto;
-          background-color: #f1f1f1;
-          border-radius: 30px;
-          padding: 5px 15px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .search-bar input[type="text"] {
-          border: none;
-          background: transparent;
-          outline: none;
-          font-size: 16px;
-          padding: 10px;
-          flex: 1;
-        }
-
-        .search-bar button {
-          border: none;
-          background-color: #799351;
-          color: white;
-          padding: 10px 16px;
-          border-radius: 25px;
-          cursor: pointer;
-          font-weight: bold;
-          transition: background-color 0.3s ease;
-        }
-
-        .search-bar button:hover {
-          background-color: #5e7d3b;
-        }
-
 
     </style>
